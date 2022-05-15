@@ -16,7 +16,9 @@
  |@schematics/angular | 13.3.1 (cli-only)|
 
  <p>Todos os projetos serão postados sem as pastas: ".angular", ".vscode", "node_modules"</p>
+
 ## Agradecimentos:
+
 <p>Gostaria de agradecer ao professor João Evangelista, por ministrar o curso de Angular com Firebase no 2 semestre do ano passado e à Loiane Groner, pelo tutorial de Angular disponível no Youtube</p>
 <p>Canal do prof. João Evangelista: https://www.youtube.com/c/PJEJo%C3%A3oEvangelista</p>
 <p>Canal da Loiane Groner: https://www.youtube.com/c/loianegroner</p>
