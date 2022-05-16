@@ -1,0 +1,20 @@
+<section class="property-binding">
+    <article>
+        <h3>Interpolation/Interpolação</h3>
+        <p>String renderizada com Interpolação: {{ url }}</p><!--Cuspindo uma variável-->
+        <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p><!--Cuspindo um calculo numérico-->
+        <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor()}}</p><!--Cuspindo um calculo numérico mais uma função/metodo-->
+        <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso()}}</p><!--Cuspindo um atributo e uma função/metodo, ambas booleanas com a porta lógica "E"-->
+        <p>Curso de Angular e gosto do curso: {{ (cursoAngular && getCurtirCurso()) ? "Verdadeiro!" : "Falso."}}</p><!--Cuspindo um atributo e uma função/metodo, ambas booleanas com a porta lógica "E", com o objetivo de utilizar um operador ternário para cuspir uma string-->
+    </article>
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImagem }}"><!--Usando interpolação tradicional chamando a variável/atributo contida no componente TypeScript-->
+        <img [src]="urlImagem2"><!--Usando property binding-->
+        <img bind-src="urlImagem2"><!--Usando property binding de uma segunda forma-->
+    </article>
+    <article>
+        <h3>Class e Style Binding</h3>
+        
+    </article>
+</section>
