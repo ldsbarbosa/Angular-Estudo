@@ -1,1 +1,11 @@
-<p>Este é o componente de cursos.</p>
+<app-curso-detalhe></app-curso-detalhe>
+<p>cursos-component funciona!</p>
+<p>
+    Lista de cursos do portal {{nomePortal}}
+</p>
+
+<ul>
+    <li *ngFor="let curso of cursos"> <!--Usando diretiva ngFor para fazer um laço "for each" que percorre cada elemento de um vetor-->
+        {{curso}}
+    </li>
+</ul>
