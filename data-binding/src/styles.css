@@ -1,1 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 /* You can add global styles to this file, and also import other style files */
+
+/*Para instalar o bootstap:
+    1- Esteja com o terminal ligado no endereço do projeto
+    2- Execute o comando: npm install bootstrap --save
+    3- Vá no arquivo /src/styles.css dentro do projeto que você rodou o comando
+    4- Realiza o seguinte import: " @import "~bootstrap/dist/css/bootstrap.css"; "
+    5- Sucesso!
+    Créditos: https://www.itsolutionstuff.com/post/how-to-install-bootstrap-5-in-angular-13example.html
+*/

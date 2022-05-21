@@ -10,7 +10,7 @@ var numeros = [1, 2, 3];
 numeros.map(function (valor) {
     return valor * 2;
 });
-numeros.map(function (valor) { return valor * 2; }); // ES 6
+numeros.map(function (valor) { return valor * 2; }); // ES 2015
 var Matematica = /** @class */ (function () {
     function Matematica() {
     }
@@ -26,4 +26,8 @@ n2 = 4.4;
 
     es6-features.org
     babeljs.io
+
+    Comandos prompt úteis:
+
+    tsc nomeDoArquivo.ts
 */ 

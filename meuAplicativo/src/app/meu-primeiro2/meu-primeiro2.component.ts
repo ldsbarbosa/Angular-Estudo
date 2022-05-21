@@ -6,5 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meu-primeiro2.component.css']
 })
 export class MeuPrimeiro2Component {
-
+  //Dento do component.ts, onde temos nossa classe Component, será declarada toda a lógica de programação e código JavaScript
+  // É aqui que se dá o dinamismo
 }

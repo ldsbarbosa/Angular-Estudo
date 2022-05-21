@@ -15,7 +15,7 @@ numeros.map(function(valor){
     return valor*2;
 });
 
-numeros.map(valor => valor * 2); // ES 6
+numeros.map(valor => valor * 2); // ES 2015
 
 class Matematica {// ES 6
     soma(x, y){

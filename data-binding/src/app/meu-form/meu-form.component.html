@@ -1,0 +1,25 @@
+<section>
+    <article>
+        <h3>Binding de dados em duas direções!</h3>
+        <div><!--Class binding(Usando value) + Event Binding(Usando input para verificar atualizações no campo)-->
+            <input type="text"
+                [value]="nome"
+                (input)="trocaNome($event)"
+            />
+            <!--Usando two-way data binding abaixo!-->
+            <input type="text"
+                [(ngModel)]="nome"
+            />
+            <p>Você digitou o nome: {{ nome }}</p>
+
+
+            <input type="text"
+                [(ngModel)]="pessoa.nome"
+            />
+            <input type="text"
+                [(ngModel)]="pessoa.idade"
+            />
+            <p>Você digitou os seguintes dados: {{ pessoa.nome }} e {{ pessoa.idade }}</p>
+        </div>
+    </article>
+</section>

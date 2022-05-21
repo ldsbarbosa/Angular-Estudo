@@ -6,9 +6,11 @@ import { CursosService } from './cursos.service'; // Importação de um Serviço
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
   styleUrls: ['./cursos.component.css']
-})
+})//O "./" indica que o que vem à seguir está no mesmo diretório/pasta que o mesmo arquivo que está chamando-o
+
+
 export class CursosComponent implements OnInit {
-  
+  // Em TypeScript, por possuir tipagem forte, deve-se adicionar tipo às variáveis
   nomePortal: string; // String
   cursos: string[]; // Array de Strings
 

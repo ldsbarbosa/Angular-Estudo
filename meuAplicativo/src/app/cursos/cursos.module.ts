@@ -15,8 +15,8 @@ import { CursosService } from './cursos.service'; // Serviço
     CommonModule
   ],
   exports:[
-    CursosComponent,//Exportação de um componente para o modulo principal
-    CursoDetalheComponent//Exportação de um componente para o modulo principal
+    CursosComponent,//Exportação de um componente para o modulo que importar este modulo
+    CursoDetalheComponent//Exportação de um componente para o modulo que importar este modulo
   ],
   providers: [
     CursosService //Identifica a classe CursosService como um provedor(serviço) para injetar dependências
