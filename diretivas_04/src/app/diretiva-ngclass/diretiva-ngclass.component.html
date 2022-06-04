@@ -1,0 +1,16 @@
+<h5>diretiva [ngClass]</h5>
+<div class="taPequenoDemais"><!-- A primeira é usando property binding. A segunda é usando o ngClass-->
+<i
+    class="bi"
+    [class.bi-arrow-up-left-circle-fill]="!meuFavorito"
+    [class.bi-arrow-up-left-circle]="meuFavorito"
+    (click)="aoClicar()"
+    ></i></div>
+<p>diretiva-ngclass works!</p><!-- Abaixo, uso da diretiva ngClass, utilizando testes lógicos que podem incluir variáveis para modificar o DOM por meio de CSS-->
+<div class="taPequenoDemais"><i class="bi"
+[ngClass] = "{
+    'bi-arrow-down-right-circle-fill': !meuFavorito2,
+    'bi-arrow-down-right-circle': meuFavorito2
+}"
+(click)="aoClicar2()"
+></i></div>

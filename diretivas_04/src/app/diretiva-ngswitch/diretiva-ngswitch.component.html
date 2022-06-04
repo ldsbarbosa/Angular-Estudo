@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"
+            [class.active]="aba == 'home'"
+            (click)="aba = 'home'"
+            >Home</a><!-- Usando property binding para modificar o anchor se a variável aba tiver home, e então event binding para atribuir home para aba-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+            [class.active]="aba == 'link'"
+            (click)="aba = 'link'"
+            >Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+            [class.active]="aba == 'casa'"
+            (click)="aba = 'casa'"
+            >Casa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+            [class.active]="aba == 'lar'"
+            (click)="aba = 'lar'"
+            >Lar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+            [class.active]="aba == 'mapa'"
+            (click)="aba = 'mapa'"
+            >Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+            [class.active]="aba == 'lista'"
+            (click)="aba = 'lista'"
+            >Lista</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid" [ngSwitch]="aba"><!-- Uma vez definida o valor da variável "aba" por meio de clicar nos anchor, por meio da ativação da pseudo-classe CSS :active e modificação da
+    variável aba para a que está no anchor, será exibido um certo paragrafo ou pelo case ou pelo default. Clássica estrutura Switch
+    Switch(Variável){
+        Case Variável:
+            Lista de comandos;
+            Break;
+        Default: -->
+    <p *ngSwitchCase="'mapa'">Modo Mapa ativado</p>
+    <p *ngSwitchCase="'lista'">Modo Lista ativado</p>
+    <p *ngSwitchCase="'lar'">Modo Lar ativado</p>
+    <p *ngSwitchDefault>Home</p>
+</div>

@@ -1,0 +1,9 @@
+<h5>Diretiva *ngFor</h5>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of cursos, let i = index">
+        Curso {{i + 1}} - {{item}}</li>
+    <!-- Uso de laço de repetição via diretiva ngFor // É obrigatorio o uso do "let" para afirmar que item é uma variável // Item = Cada valor do array. I = Indices do array-->
+</ul>
+
+<!-- As alternativas não funcionaram :(-->

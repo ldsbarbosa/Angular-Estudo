@@ -1,0 +1,25 @@
+<p fundoAmarelo>
+    Texto com fundo amarelo? Será MESMO??????? >:D
+</p>
+
+<button fundoAmarelo>Botão com fundo roxo 😂</button>
+
+<p highlightMouse>
+    Texto com highlight 🙄 quando passo o mouse.
+</p>
+
+<p highlighMouse defaultColor="'grey'" highlightColor="'red'"><!-- https://www.youtube.com/watch?v=rB3OjMOel3s&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=36 -->
+    Texto com highlight com cores customizadas.
+</p>
+
+<h5>Diretiva Estrutura customizada - ngElse</h5>
+
+<div *ngIf="mostrarCursos">
+    Lista de cursos aqui!<br>
+</div>
+
+<div *ngElse="mostrarCursos">
+    Não existem cursos para serem citados.<br>
+</div>
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou Esconder cursos</button>

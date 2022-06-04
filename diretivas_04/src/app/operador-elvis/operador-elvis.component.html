@@ -1,0 +1,5 @@
+<h2>Operador Elvis</h2>
+<p> Descrição: {{ tarefa.desc }}</p>
+<p> Responsável: {{ tarefa.responsavel }}</p>
+<p> Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome : '' }}</p> <!-- Uso de operador ternário -->
+<p> Responsável: {{ tarefa.responsavel?.nome }}</p> <!-- Uso de operador Elvis. Lógica parecida com a de cima. Tolera muitos aninhamentos-->

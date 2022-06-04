@@ -1,0 +1,29 @@
+<p>diretiva-ngstyle works!</p>
+<h5>Styles com property binding (Style Binding)</h5>
+<p>Uso sem ngStyle</p>
+
+<button class="btn btn-primary"
+    [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+    [style.color]="ativo ? 'white' : 'black'"
+    [style.fontWeight]="ativo ? 'bold' : 'normal'"
+    [style.fontSize]="tamanhoFonte + 'px'"
+    (click) = "aoClicar()"
+>
+<input type="number" [(ngModel)]="tamanhoFonte">
+Mudar atributo 'ativo'
+</button>
+
+<p>Uso com ngStyle</p>
+<!-- o ngStyle vai entre colchetes, é u property binding-->
+<button class="btn btn-secondary"
+    [ngStyle]="{
+        'backgroundColor': (ativo2 ? 'blue' : 'gray'),
+        'color': (ativo2 ? 'white' : 'black'),
+        'fontWeight': (ativo2 ? 'bold' : 'normal'),
+        'fontSize': tamanhoFonte2 + 'px'
+    }"
+    (click) = "aoClicar2()"
+>
+<input type="number" [(ngModel)]="tamanhoFonte2">
+Mudar atributo 'ativo2'
+</button>

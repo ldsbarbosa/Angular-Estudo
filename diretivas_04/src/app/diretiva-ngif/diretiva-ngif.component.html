@@ -1,0 +1,41 @@
+<h5>*ngIf</h5>
+<div *ngIf="cursos.length > 0"><!-- O ngIf é uma diretiva que entra como se fosse um atributo HTML. Ele executará um teste lógico podendo usar variáveis. Se der verdadeiro, o elemento
+é exibido no navegador. Se der falso, não é exibido.-->
+    Lista de cursos aqui!<br><br>
+</div>
+
+<div *ngIf="cursos.length == 0"><!-- Usando uma variável que é uma lista de strings-->
+    Não existem cursos para serem citados.<br>
+</div>
+
+<div *ngIf="!mostrarCursos"><!-- Usando uma variável que é do tipo boolean.-->
+    Lista de cursos aqui!<br>
+</div>
+
+<div *ngIf="mostrarCursos">
+    Não existem cursos para serem citados.<br>
+</div>
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou Esconder cursos</button>
+<!--Cuidado com o ngIf, pois ele mexe com o DOM e isso pode dar problemas de performance-->
+<!--O "hidden" pode ser uma alternativa-->
+<h5>Hidden como alternativa</h5>
+<div [hidden]="!mostrarCursos"><!-- Usando property binding com o atributo "hidden", que é um atributo da div.-->
+    Lista de cursos aqui!<br>
+</div>
+
+<div [hidden]="mostrarCursos">
+    Não existem cursos para serem citados.<br>
+</div>
+<!-- O atributo "hidden" é recomendado para árvores de elementos pequenas, já a diretiva *ngIf é recomendada para árvore de elementos grandes-->
+<!-- Cuidado com segurança.-->
+
+<h5>Usando o ngIf de forma diferente</h5>
+
+<template *ngIf="mostrarCursos"><!-- Não funcionou :(-->
+    <p>Lista de cursos aqui com o template!!</p>
+</template>
+
+<div template="ngIf mostrarCursos"><!-- Essa funcionou :D-->
+    Lista de cursos com a div!!
+</div>
